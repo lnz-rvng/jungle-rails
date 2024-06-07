@@ -4,7 +4,12 @@
     <h1>My Cart</h1>
   </header>
 
-  <div class="panel panel-default items">
+  <% if enhanced_cart == [] %>
+    <p class="alert alert-info">
+      Your Cart is currently empty. Go <%= link_to "Back", "/products" %> to HomePage to add an item.
+    </p>
+  <% else %>
+    <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
         <tr>
@@ -48,5 +53,5 @@
       <% end %>
     </div>
   </div>
-
+  <% end %>
 </section>
