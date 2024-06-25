@@ -11,7 +11,8 @@ module.exports = defineConfig({
   //   },
   // },
   screenshotsFolder: "tmp/cypress_screenshots",
-
+  viewportHeight: 1440,
+  viewportWidth: 2160,
   videosFolder: "tmp/cypress_videos",
   // trashAssetsBeforeRuns: false,
 
