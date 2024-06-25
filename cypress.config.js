@@ -13,4 +13,7 @@ module.exports = defineConfig({
   screenshotsFolder: "tmp/cypress_screenshots",
   videosFolder: "tmp/cypress_videos",
   trashAssetsBeforeRuns: false,
+  baseUrl: "http://127.0.0.1:3000/",
+  integrationFolder: "cypress/e2e",
+  testFiles: "**/*.cy.js"
 });
